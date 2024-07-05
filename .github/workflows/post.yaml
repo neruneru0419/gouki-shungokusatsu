@@ -1,13 +1,16 @@
-push:
-  branches:
-    - main
-schedule:
-  # 定期実行する時間・・・①
-  - cron: "*/30 * * * *"
-workflow_dispatch:
+name: main
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # 定期実行する時間・・・①
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
 
 jobs:
- note:
+  note:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

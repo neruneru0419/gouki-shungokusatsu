@@ -2,9 +2,7 @@ name: main
 
 on:
   schedule:
-    # 定期実行する時間・・・①
     - cron: "*/1 * * * *"
-  workflow_dispatch:
 
 jobs:
   note:

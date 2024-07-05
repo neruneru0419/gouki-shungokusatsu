@@ -25,6 +25,6 @@ jobs:
         run: budle exec ruby main.rb
         env: 
           ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
-          ACCESS_TOKEN_SECRET: ${{ACCESS_TOKEN_SECRET}}
+          ACCESS_TOKEN_SECRET: ${{secrets.ACCESS_TOKEN_SECRET}}
           API_KEY: ${{secrets.API_KEY}}
           API_KEY_SECRET: ${{secrets.API_KEY_SECRET}}

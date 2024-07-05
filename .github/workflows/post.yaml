@@ -1,9 +1,6 @@
 name: main
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     # 定期実行する時間・・・①
     - cron: "*/1 * * * *"

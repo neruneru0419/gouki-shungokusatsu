@@ -30,7 +30,7 @@ def post
   chanting_words = four_character_idioms.sample(3) + ["故豪鬼成"]
   post_text = convert_reading_vertically(chanting_words) + "\n　👊 👊 👊" + "\n👊　　　　👊" + "\n👊　 👹　 👊" + "\n👊　　　　👊" + "\n　👊 👊 👊"
   post_data = {text: post_text}
-  puts post_data
+  puts ENV["API_KEY"]
   puts x_client.post("tweets", post_data.to_json)
 end
 

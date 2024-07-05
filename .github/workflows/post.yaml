@@ -3,9 +3,10 @@ name: main
 on:
   schedule:
     - cron: "*/1 * * * *"
+  workflow_dispatch:
 
 jobs:
-  note:
+  post:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
